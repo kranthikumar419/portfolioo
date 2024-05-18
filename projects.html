@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: orangered;
+            /* color: #fff; */
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .project {
+            background-color: #fff;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        .project:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .project img {
+            max-width: 100%;
+            border-radius: 8px 8px 0 0;
+            transition: opacity 0.3s;
+        }
+
+        .project img:hover {
+            opacity: 0.8;
+        }
+        .project video{
+            max-width: 100%;
+            border-radius: 8px 8px 0 0;
+            transition: opacity 0.3s;
+        }
+        .project video:hover{
+            opacity: 0.8;
+        }
+
+        .project h2 {
+            margin: 1rem 0 0.5rem;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .project p {
+            color: #666;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My <span>Projects</span></h1>
+    </header>
+    <main>
+        <section class="projects">
+            <div class="project" onclick="location.href='https://kranthikumar419.github.io/kra/'">
+                <img src="project1.png" alt="Project 1" >
+                <h2>Own Gaming Website</h2>
+                <p>Created a gaming page using HTML, CSS, and JavaScript, featuring an engaging design and dynamic
+                     elements for an enhanced user experience. 
+                    The project showcases effective content structuring, appealing visual styling, and interactivity.
+                     It also includes a dedicated section recognizing team members' contributions, highlighting the
+                      collaborative effort behind the project.</p>
+            </div>
+            <div class="project" onclick="location.href='https://kranthikumar419.github.io/codeedi/'">
+                <img src="project2.png" alt="Project 2" >
+                <h2>Code Editor</h2>
+                <p>Developed a user-friendly Code Editor designed for beginners to practice front-end technologies like 
+                    HTML, CSS, and JavaScript. The editor features an intuitive interface that facilitates learning and 
+                    experimentation, making it easy for users to write, edit, and preview code in real-time.
+                     This project showcases my ability to create practical, educational tools that enhance the learning experience for new developers.</p>
+            </div>
+            <div class="project" >
+                <video src="projectvid (1).mp4" alt="Project 3" controls loop autoplay>
+                <h2></h2>
+                <p></p>
+            </div>
+            <div class="project">
+                <img src="project3.png" alt="Project 4">
+                <h2>Borewell Child Rescue Robot</h2>
+                <p>Created a Real time Application On Embedded and IoT using ESP32 Microcontroller and Arduino IDE Software</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Projects</p>
+    </footer>
+</body>
+</html>
